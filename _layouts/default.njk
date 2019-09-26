@@ -154,7 +154,7 @@
         if (btn) {
             btn.addEventListener('click', function(e) {
                 e.preventDefault();
-                var statuses = document.querySelectorAll("a")
+                var statuses = document.querySelectorAll("a.status")
                 var selectedIndex = Math.floor(Math.random() * statuses.length)
                 var selectedEl = statuses[selectedIndex]
                 selectedEl.click()
