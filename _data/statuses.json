@@ -43,10 +43,9 @@
             { "name": "Delayed", "desc": "Flight will depart 15 or more minutes after its scheduled departure time" },
             { "name": "Departed", "desc": "Flight has left the departure gate but may not be airborne yet" },
             { "name": "In Air", "desc": "Flight is airborne. Takeoff time is actual takeoff or 'wheels up' time" },
-            { "name": "Departed", "desc": "Flight has left the departure gate but may not be airborne yet" },
             { "name": "Landed", "desc": "Flight has landed. The landing time is actual touchdown or 'wheels down'" },
-            { "name": "Arrived", "desc": "Flight has left the departure gate but may not be airborne yet" },
-            { "name": "Departed", "desc": "Flight has arrived at its destination gate" }
+            { "name": "Arrived", "desc": " Flight has arrived at its destination gate" },
+            { "name": "Cancelled", "desc": "Flight has been cancelled" }
         ]
     },
     {
