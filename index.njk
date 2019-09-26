@@ -1,0 +1,26 @@
+---
+layout: default.njk
+---
+
+
+<a class="btn-hero" id="get-status" href="/list/">Get A Status</a>
+
+
+<ul style="display:none;">
+{% for grp in statuses %}
+    <li>
+        <span class="grp-name">{{grp.type}}</span>
+
+        <ul>
+        {% for item in grp.items %}
+            <li>
+                <a href="/statuses/{{grp.type}}/{{item.name}}/">
+                    {{item.name}}
+                </a>
+            </li>
+        {% endfor %}
+        </ul>
+    </li>
+{% endfor %}
+</ul>
+

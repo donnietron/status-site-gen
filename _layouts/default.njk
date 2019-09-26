@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" > 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+
+    {# Primary Meta Tags #}
+    <title>Status Site Generator</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    <style type="text/css">
+    html, body {
+        margin: 0;
+    }
+    *, *:before, *:after {
+        box-sizing: border-box;
+    }
+    body.page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-size: 2em;
+        background: #53037b;
+        color: white;
+        font-family: 'Fredoka One', sans-serif;
+    }
+
+    body.page a {
+        color: #73b1e3;
+        text-decoration: none;
+        transition: color .3s ease;
+    }
+    body.page a:hover {
+        text-decoration: underline;
+        color: #acd2f1;
+    }
+
+    ul {
+        list-style: none;
+        text-align: left;
+    }
+    .content > ul > li {
+        margin-bottom: 2rem;
+    }
+    .content > ul {
+        padding-left: 0;
+    }
+    ul ul li {
+        display: inline-block;
+    }
+
+    body.page a.btn-hero {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: #53037b;
+        border: 7px solid #5e82ff;
+        border-radius: 2px;
+        color: whitesmoke;
+        font-size: 4rem;
+        padding: 2rem 2rem;
+        cursor: pointer;
+        transition: background .4s ease, color .4s ease;
+        width: 100%;
+        max-width: 34rem;
+        margin: 2rem;
+        font-family: 'Fredoka One', sans-serif;
+        text-decoration: none;
+    }
+
+
+    body.page a.btn-hero:hover {
+        background: #7f2ca9;
+        color: white;
+    }
+
+    main.content {
+        max-width: 40rem;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    a.home {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+    }
+
+    h1,h2,h3,h4,h5 {
+        margin: 2rem;
+    }
+
+    .status-type {
+        font-size: 4rem;
+        color: rgba(255, 255, 255, .9);
+    }
+    .status-name {
+        font-size: 5rem;
+    }
+    .status-desc {
+        color: rgba(255, 255, 255, .75);
+        font-weight: 100;
+    }
+    @media (max-width: 600px) {
+        body.page a.btn-hero {
+            font-size: 3rem;
+        }
+    }
+    </style>
+
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+
+<body class="page">
+
+
+    <main class="content">
+        
+        {{ content | safe }}
+
+    </main>
+
+    <script>
+        var btn = document.getElementById('get-status')
+        if (btn) {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                var statuses = document.querySelectorAll("a")
+                var selectedIndex = Math.floor(Math.random() * statuses.length)
+                var selectedEl = statuses[selectedIndex]
+                selectedEl.click()
+            })
+        }
+    </script>
+</body>
+</html>

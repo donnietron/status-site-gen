@@ -1,0 +1,20 @@
+---
+layout: default.njk
+pagination:
+  data: collections.flatStatuses
+  size: 1
+  alias: status
+permalink: /statuses/{{status.type}}/{{status.name}}/index.html
+---
+
+<a class="home" href="/">⭠ Home</a>
+
+<h2 class="status-type">{{status.type}}</h2>
+
+<h1 class="status-name">{{status.name}}</h1>
+
+{% if status.desc %}
+    <h3 class="status-desc">{{status.desc}}</h3>
+{% endif %}
+
+

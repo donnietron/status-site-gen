@@ -1,0 +1,23 @@
+---
+layout: default.njk
+---
+<a class="home" href="/">⭠ Home</a>
+
+<ul>
+{% for grp in statuses %}
+    <li>
+        <span class="grp-name">{{grp.type}}</span>
+
+        <ul>
+        {% for item in grp.items %}
+            <li>
+                <a href="/statuses/{{grp.type}}/{{item.name}}/">
+                    {{item.name}}
+                </a>
+            </li>
+        {% endfor %}
+        </ul>
+    </li>
+{% endfor %}
+</ul>
+

@@ -1,0 +1,27 @@
+[
+    {
+        "type": "JIRA",
+        "items": [
+            { "name": "Submitted", "desc": "" },
+            { "name": "Open", "desc": "The issue is open and ready for the assignee to start work on it." },
+            { "name": "In Progress", "desc": "This issue is being actively worked on at the moment by the assignee." },
+            { "name": "Resolved", "desc": "A resolution has been taken, and it is awaiting verification by reporter. From here issues are either reopened, or are closed." },
+            { "name": "Closed", "desc": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened." }
+        ]
+    },
+    {
+        "type": "HTTP",
+        "items": [
+            { "name": "1xx", "desc": "Informational" },
+            { "name": "2xx", "desc": "Success" },
+            { "name": "200", "desc": "OK" },
+            { "name": "3xx", "desc": "Redirection" },
+            { "name": "304", "desc": "Not Modified" },
+            { "name": "4xx", "desc": "Client Error" },
+            { "name": "400", "desc": "Bad Request" },
+            { "name": "404", "desc": "Not Found" },
+            { "name": "5xx", "desc": "Server Error" },
+            { "name": "500", "desc": "Internal Server Error" }
+        ]
+    }
+]
