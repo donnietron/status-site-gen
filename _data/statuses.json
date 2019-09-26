@@ -23,5 +23,39 @@
             { "name": "5xx", "desc": "Server Error" },
             { "name": "500", "desc": "Internal Server Error" }
         ]
+    },
+    {
+        "type": "Relationship",
+        "items": [
+            { "name": "Single", "desc": "" },
+            { "name": "In a Relationship", "desc": "" },
+            { "name": "Engaged", "desc": "" },
+            { "name": "Married", "desc": "" },
+            { "name": "It's Complicated", "desc": "" },
+            { "name": "Domestic Partnership", "desc": "" },
+            { "name": "Civil Union", "desc": "" }
+        ]
+    },
+    {
+        "type": "Flight",
+        "items": [
+            { "name": "Scheduled", "desc": "Flight is not airborne. Departure and arrival times are according to airline's schedule" },
+            { "name": "Delayed", "desc": "Flight will depart 15 or more minutes after its scheduled departure time" },
+            { "name": "Departed", "desc": "Flight has left the departure gate but may not be airborne yet" },
+            { "name": "In Air", "desc": "Flight is airborne. Takeoff time is actual takeoff or 'wheels up' time" },
+            { "name": "Departed", "desc": "Flight has left the departure gate but may not be airborne yet" },
+            { "name": "Landed", "desc": "Flight has landed. The landing time is actual touchdown or 'wheels down'" },
+            { "name": "Arrived", "desc": "Flight has left the departure gate but may not be airborne yet" },
+            { "name": "Departed", "desc": "Flight has arrived at its destination gate" }
+        ]
+    },
+    {
+        "type": "Shipment",
+        "items": [
+            { "name": "Arrived at destination", "desc": "The shipment has arrived at the destination service center" },
+            { "name": "Delivered", "desc": "The shipment has been delivered to the recipient" },
+            { "name": "Follow-up on time", "desc": "Arrived on time, but a possible delay notification was sent" },
+            { "name": "Late", "desc": "Your shipment will not be delivered today." }
+        ]
     }
 ]
