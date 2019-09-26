@@ -2,6 +2,9 @@
 
 module.exports = function(eleventyConfig) {
 
+    // static passthroughs - remap to root
+    eleventyConfig.addPassthroughCopy("favicon.ico");
+    eleventyConfig.addPassthroughCopy("assets");
 
     // split master slide into collection
     eleventyConfig.addCollection("flatStatuses", col => {
