@@ -37,6 +37,18 @@
     *, *:before, *:after {
         box-sizing: border-box;
     }
+
+    html {
+        background: #53037b;
+        background: -webkit-gradient(left bottom, right top, color-stop(0%, #890992), color-stop(100%, #53037b));
+        background: -webkit-linear-gradient(45deg, #890992 0%, #53037b 100%);
+        background:    -moz-linear-gradient(45deg, #890992 0%, #53037b 100%);
+        background:     -ms-linear-gradient(45deg, #890992 0%, #53037b 100%);
+        background:      -o-linear-gradient(45deg, #890992 0%, #53037b 100%);
+        background:         linear-gradient(45deg, #890992 0%, #53037b 100%);
+        background-attachment: fixed;
+    }
+    
     body.page {
         display: flex;
         justify-content: center;
@@ -45,15 +57,17 @@
         font-size: 2em;
         color: white;
         font-family: 'Fredoka One', sans-serif;
-        
-        background: rgba(137,9,146,1);
-        background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(137,9,146,1)), color-stop(100%, rgba(83,3,123,1)));
-        background: -webkit-linear-gradient(45deg, rgba(137,9,146,1) 0%, rgba(83,3,123,1) 100%);
-        background:    -moz-linear-gradient(45deg, rgba(137,9,146,1) 0%, rgba(83,3,123,1) 100%);
-        background:     -ms-linear-gradient(45deg, rgba(137,9,146,1) 0%, rgba(83,3,123,1) 100%);
-        background:      -o-linear-gradient(45deg, rgba(137,9,146,1) 0%, rgba(83,3,123,1) 100%);
-        background: linear-gradient(45deg, rgba(137,9,146,1) 0%, rgba(83,3,123,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#890992', endColorstr='#53037b', GradientType=1 );
+    }
+
+    body.page.centered {
+        align-items: center;
+    }
+    body.page.centered main.content {
+        margin-top: 0;
+    }
+
+    body.centered {
+        align-items: center;
     }
 
     body.page a {
@@ -157,7 +171,7 @@
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
 </head>
 
-<body class="page">
+<body class="page {{class}}">
 
     <a class="github" href="https://github.com/KyleMit/status-site-gen/blob/master/_data/statuses.json">Github</a>
 
