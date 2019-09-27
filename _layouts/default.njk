@@ -40,12 +40,20 @@
     body.page {
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         height: 100vh;
         font-size: 2em;
-        background: #53037b;
         color: white;
         font-family: 'Fredoka One', sans-serif;
+        
+        background: rgba(137,9,146,1);
+        background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(137,9,146,1)), color-stop(100%, rgba(83,3,123,1)));
+        background: -webkit-linear-gradient(45deg, rgba(137,9,146,1) 0%, rgba(83,3,123,1) 100%);
+        background:    -moz-linear-gradient(45deg, rgba(137,9,146,1) 0%, rgba(83,3,123,1) 100%);
+        background:     -ms-linear-gradient(45deg, rgba(137,9,146,1) 0%, rgba(83,3,123,1) 100%);
+        background:      -o-linear-gradient(45deg, rgba(137,9,146,1) 0%, rgba(83,3,123,1) 100%);
+        background: linear-gradient(45deg, rgba(137,9,146,1) 0%, rgba(83,3,123,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#890992', endColorstr='#53037b', GradientType=1 );
     }
 
     body.page a {
@@ -70,6 +78,15 @@
     }
     ul ul li {
         display: inline-block;
+    }
+    
+    ul > li > ul li::after {
+        content: ",";
+        margin-left: -5px;
+        margin-right: 5px
+    }
+    ul > li > ul li:last-child::after {
+        content: none;
     }
 
     body.page a.btn-hero {
@@ -99,8 +116,9 @@
 
     main.content {
         max-width: 40rem;
-        text-align: center;
+        margin-top: 5rem;
         padding: 2rem;
+        text-align: center;
     }
 
     a.home {
