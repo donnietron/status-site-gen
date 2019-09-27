@@ -30,7 +30,7 @@
             { "name": "Single", "desc": "Only one; not one of several" },
             { "name": "Engaged", "desc": "Having formally agreed to marry" },
             { "name": "Married", "desc": "United in marriage" },
-            { "name": "Civil Union", "desc": "A legally recognized union " }
+            { "name": "Civil Union", "desc": "A legally recognized union" }
         ]
     },
     {
