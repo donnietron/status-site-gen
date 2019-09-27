@@ -2,11 +2,11 @@
     {
         "type": "JIRA",
         "items": [
-            { "name": "Submitted", "desc": "" },
-            { "name": "Open", "desc": "The issue is open and ready for the assignee to start work on it." },
-            { "name": "In Progress", "desc": "This issue is being actively worked on at the moment by the assignee." },
-            { "name": "Resolved", "desc": "A resolution has been taken, and it is awaiting verification by reporter. From here issues are either reopened, or are closed." },
-            { "name": "Closed", "desc": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened." }
+            { "name": "Submitted", "desc": "The issue has been received" },
+            { "name": "Open", "desc": "The issue is open and ready for the assignee to start work on it" },
+            { "name": "In Progress", "desc": "This issue is being actively worked on at the moment by the assignee" },
+            { "name": "Resolved", "desc": "A resolution has been taken, and it is awaiting verification by reporter" },
+            { "name": "Closed", "desc": "The issue is considered finished, the resolution is correct" }
         ]
     },
     {
@@ -27,13 +27,10 @@
     {
         "type": "Relationship",
         "items": [
-            { "name": "Single", "desc": "" },
-            { "name": "In a Relationship", "desc": "" },
-            { "name": "Engaged", "desc": "" },
-            { "name": "Married", "desc": "" },
-            { "name": "Complicated", "desc": "" },
-            { "name": "Domestic Partnership", "desc": "" },
-            { "name": "Civil Union", "desc": "" }
+            { "name": "Single", "desc": "Only one; not one of several" },
+            { "name": "Engaged", "desc": "Having formally agreed to marry" },
+            { "name": "Married", "desc": "United in marriage" },
+            { "name": "Civil Union", "desc": "A legally recognized union " }
         ]
     },
     {
@@ -54,7 +51,19 @@
             { "name": "Arrived at destination", "desc": "The shipment has arrived at the destination service center" },
             { "name": "Delivered", "desc": "The shipment has been delivered to the recipient" },
             { "name": "Follow-up on time", "desc": "Arrived on time, but a possible delay notification was sent" },
-            { "name": "Late", "desc": "Your shipment will not be delivered today." }
+            { "name": "Late", "desc": "Your shipment will not be delivered today" }
+        ]
+    },
+    {
+        "type": "Outlook",
+        "items": [
+            { "name": "Available", "desc": "You're online and available to contact" },
+            { "name": "Busy", "desc": "You're busy and don’t want to be interrupted" },
+            { "name": "In a meeting", "desc": "You’re in a meeting and don’t want to be disturbed" },
+            { "name": "Do not disturb", "desc": "You don't want to be disturbed and will see conversation notifications only if sent by someone in your work-group" },
+            { "name": "Be Right Back", "desc": "You’re stepping away from the computer for a few moments" },
+            { "name": "Inactive/Away", "desc": "You’re logged on but your computer has been idle or you’ve been away from your computer for a specified period of time" },
+            { "name": "Offline", "desc": "You’re not signed in. You’ll appear as Offline to people whom you’ve blocked from seeing your presence" }
         ]
     }
 ]
